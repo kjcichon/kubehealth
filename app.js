@@ -40,7 +40,7 @@ app.get('/alive', function (req, res) {
   res.send('alive');
 })
 
-pp.get('/islively', function (req, res) {
+app.get('/islively', function (req, res) {
   var alive = session.alive;
   console.log("hitting lively probe=" + alive)
   if (alive==='no'){
